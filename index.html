@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<style>
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid;
+}
+
+input {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border: 2px solid purple;
+}
+
+#submitBtn {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border: 2px solid purple;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
+
+#deleteAllButton { display: flex;
+  margin: auto;
+  padding: 0.5rem;
+  border: 2px solid purple;
+  background-color: purple;
+  color: white;
+  cursor: pointer;}
+
+
+
+
+table {
+  margin: 0.3rem;
+  padding: 3.5rem;
+  border: 2px solid purple;
+  border-radius: 3px;
+  margin: 0 auto;
+ width: 50%;}
+    
+    </style>
+    
+<body>
+  <form id="Form">
+    <input type="text" placeholder="Name:" id="name" />
+    <div class="error" id="name-error"></div>
+    <input type="text" placeholder="Surname:" id="surname" />
+    <div class="error" id="surname-error"></div>
+    <input type="text" placeholder="Age:" id="age" />
+    <div class="error" id="age-error"></div>
+    <button id="submitBtn">Submit</button>
+  </form>
+
+  
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  
+  <button id="deleteAllButton">Delete All</button>
+
+    <script src="./index.js"></script> 
+</body>
+</html>
